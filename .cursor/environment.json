@@ -1,0 +1,8 @@
+{
+  "name": "One Thought",
+  "install": "python3 --version",
+  "start": "cd \"$(find /workspace \"$PWD\" /agent/repos -maxdepth 3 -name index.html -printf '%h' -quit 2>/dev/null || true)\" 2>/dev/null; echo \"Serving from $PWD on http://localhost:8000\"; python3 -m http.server 8000 --bind 0.0.0.0",
+  "ports": [
+    { "name": "web server", "port": 8000 }
+  ]
+}
