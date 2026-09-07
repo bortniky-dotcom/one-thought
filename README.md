@@ -2,7 +2,7 @@
 
 A one-line daily page. Same thought for the calendar day. Offline after the first visit. Add it to your phone’s home screen and it opens like an app.
 
-After GitHub Pages is enabled:
+Live site:
 
 https://bortniky-dotcom.github.io/one-thought/
 
