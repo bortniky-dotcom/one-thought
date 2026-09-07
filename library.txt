@@ -1,0 +1,46 @@
+focus|0|The work in front of you is enough for now.
+focus|1|Pick the one thing. Ignore the other nine.
+focus|0|Attention is the whole game. Spend it on purpose.
+focus|1|Close the tabs. All of them. You know the ones.
+focus|0|Start before you feel ready. Ready arrives on the way.
+discipline|1|Do the boring rep. That is the secret nobody sells.
+discipline|0|Motivation is a guest. Habit is the house.
+discipline|1|You already know the next right move. Make it.
+discipline|0|Small, again tomorrow. That is how it compounds.
+discipline|0|Make it easy to do right and annoying to do wrong.
+patience|0|Slow is smooth. Smooth is fast enough.
+patience|0|Most things worth having are quiet and take a while.
+patience|1|Stop yanking the seed to see if it grew.
+patience|1|You are not behind. There is no line.
+perspective|0|In a year, most of today will not have mattered.
+perspective|0|You have survived every worst day so far.
+perspective|1|It is not that deep. Act accordingly.
+perspective|0|Enough is a decision, not an amount.
+perspective|0|Someone would trade everything for your ordinary Tuesday.
+family|0|Call the person you keep meaning to call.
+family|0|Be easy to come home to.
+family|0|Give the people at home your first good hour, not your last tired one.
+work|0|Finish one thing before you start the next.
+work|1|Ship it good enough. Perfect is a stall.
+work|0|Leave the desk cleaner than you found it.
+work|0|Protect the first ninety minutes for the hard thing.
+health|0|Drink the water. Take the walk. Simple wins.
+health|1|Sleep is not a reward for finishing. It is the work.
+health|0|Move today so tomorrow moves easier.
+health|0|Eat like someone you are taking care of.
+courage|1|Say the true thing, kindly, now.
+courage|0|Do the thing that scares you a normal amount.
+courage|0|Ask. The worst answer is the one you already have.
+courage|0|Let it be awkward. Awkward passes.
+honesty|0|Tell yourself the real reason.
+honesty|1|Stop negotiating with the plan you already made.
+honesty|0|Notice what you are avoiding. That is usually the task.
+rest|0|Doing nothing on purpose is not doing nothing.
+rest|0|You are allowed to put it down for an hour.
+rest|1|Rest before you are wrecked, not after.
+money|0|Spend on what you actually use. Cut the rest.
+money|1|Boring money is good money.
+growth|0|You do not have to be the smartest in the room.
+growth|0|Learn it badly first. Better comes after.
+growth|1|Comfort is a nice place that grows nothing.
+growth|0|Progress is mostly showing up unimpressed and continuing.
