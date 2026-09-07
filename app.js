@@ -409,7 +409,7 @@
 
     renderGrateful(false);
     renderToday(false);
-    showView("thought");
+    showView("grateful");
   }
 
   function fillPrivateStatus() {

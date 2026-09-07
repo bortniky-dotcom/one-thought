@@ -26,17 +26,17 @@
     </header>
 
     <nav class="menu" id="menu">
-      <button type="button" class="menu-item is-active" data-view="thought">Thought</button>
-      <button type="button" class="menu-item" data-view="grateful">Grateful</button>
+      <button type="button" class="menu-item is-active" data-view="grateful">Grateful</button>
+      <button type="button" class="menu-item" data-view="thought">Thought</button>
       <button type="button" class="menu-item" data-view="today">Today</button>
     </nav>
 
     <main>
-      <section class="view is-active" id="view-thought">
+      <section class="view" id="view-thought">
         <p id="affirmation"></p>
       </section>
 
-      <section class="view" id="view-grateful">
+      <section class="view is-active" id="view-grateful">
         <h2 class="view-title">Three things, thanks to the past</h2>
         <ol id="grateful-list" class="triple"></ol>
         <p class="empty" id="grateful-empty" hidden>
@@ -55,7 +55,7 @@
 
     <footer>
       <div id="theme-line"></div>
-      <div class="actions" id="actions-thought">
+      <div class="actions" id="actions-thought" hidden>
         <button type="button" id="btn-copy">Copy</button>
         <span class="dot"></span>
         <button type="button" id="btn-another">Another</button>
@@ -64,7 +64,7 @@
         <span class="dot" id="install-dot"></span>
         <button type="button" id="btn-install">Install</button>
       </div>
-      <div class="actions" id="actions-grateful" hidden>
+      <div class="actions" id="actions-grateful">
         <button type="button" id="btn-grateful-shuffle">Another three</button>
         <span class="dot"></span>
         <button type="button" class="link" data-open-private>Edit list</button>
