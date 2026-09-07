@@ -1,10 +1,11 @@
-const CACHE = "one-thought-v4";
+const CACHE = "one-thought-v5";
 const ASSETS = [
   "./",
   "./index.html",
   "./app.js",
   "./library.js",
   "./library.txt",
+  "./personal.js",
   "./styles.css",
   "./manifest.json",
   "./icons/icon.svg"

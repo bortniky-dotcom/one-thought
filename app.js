@@ -98,8 +98,12 @@
     return lib[idx];
   }
 
+  function personalDefaults() {
+    return window.PERSONAL_DEFAULTS || { grateful: [], today: [] };
+  }
+
   function gratefulToday(force) {
-    var list = (state.personal && state.personal.grateful) || [];
+    var list = (state.personal && state.personal.grateful) || personalDefaults().grateful || [];
     if (!list.length) return null;
     var byDate = ensure("gratefulByDate", {});
     var key = todayKey();
@@ -116,7 +120,7 @@
   }
 
   function makeTodayToday(force) {
-    var list = (state.personal && state.personal.today) || [];
+    var list = (state.personal && state.personal.today) || personalDefaults().today || [];
     if (!list.length) return null;
     var byDate = ensure("todayByDate", {});
     var key = todayKey();
