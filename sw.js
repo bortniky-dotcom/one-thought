@@ -1,4 +1,4 @@
-const CACHE = "one-thought-v5";
+const CACHE = "one-thought-v6";
 const ASSETS = [
   "./",
   "./index.html",
@@ -8,7 +8,12 @@ const ASSETS = [
   "./personal.js",
   "./styles.css",
   "./manifest.json",
-  "./icons/icon.svg"
+  "./icons/icon.svg",
+  "./icons/apple-touch-icon.png",
+  "./icons/favicon-32.png",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png",
+  "./icons/icon-maskable-512.png"
 ];
 
 self.addEventListener("install", (event) => {
