@@ -11,9 +11,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="One Thought" />
   <link rel="manifest" href="./manifest.json" />
-  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" href="./icons/icon.svg" />
   <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
-  <link rel="icon" type="image/png" href="./icons/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,460;9..144,560&family=Outfit:wght@380;500&display=swap" rel="stylesheet" />
@@ -25,12 +24,38 @@
       <div class="mark">One Thought</div>
       <div id="date-line"></div>
     </header>
+
+    <nav class="menu" id="menu">
+      <button type="button" class="menu-item is-active" data-view="thought">Thought</button>
+      <button type="button" class="menu-item" data-view="grateful">Grateful</button>
+      <button type="button" class="menu-item" data-view="today">Today</button>
+    </nav>
+
     <main>
-      <p id="affirmation"></p>
+      <section class="view is-active" id="view-thought">
+        <p id="affirmation"></p>
+      </section>
+
+      <section class="view" id="view-grateful">
+        <h2 class="view-title">Three things, thanks to the past</h2>
+        <ol id="grateful-list" class="triple"></ol>
+        <p class="empty" id="grateful-empty" hidden>
+          These are private. <button type="button" class="link" data-open-private>Add your list</button> — it stays on this device.
+        </p>
+      </section>
+
+      <section class="view" id="view-today">
+        <h2 class="view-title">One way to make today great</h2>
+        <p id="today-line" class="single"></p>
+        <p class="empty" id="today-empty" hidden>
+          These are private. <button type="button" class="link" data-open-private>Add your list</button> — it stays on this device.
+        </p>
+      </section>
     </main>
+
     <footer>
       <div id="theme-line"></div>
-      <div class="actions">
+      <div class="actions" id="actions-thought">
         <button type="button" id="btn-copy">Copy</button>
         <span class="dot"></span>
         <button type="button" id="btn-another">Another</button>
@@ -39,8 +64,19 @@
         <span class="dot" id="install-dot"></span>
         <button type="button" id="btn-install">Install</button>
       </div>
+      <div class="actions" id="actions-grateful" hidden>
+        <button type="button" id="btn-grateful-shuffle">Another three</button>
+        <span class="dot"></span>
+        <button type="button" class="link" data-open-private>Edit list</button>
+      </div>
+      <div class="actions" id="actions-today" hidden>
+        <button type="button" id="btn-today-another">Another</button>
+        <span class="dot"></span>
+        <button type="button" class="link" data-open-private>Edit list</button>
+      </div>
     </footer>
   </div>
+
   <div class="sheet" id="sheet-history" hidden>
     <div class="sheet-card">
       <div class="sheet-top">
@@ -50,6 +86,7 @@
       <div id="history-list"></div>
     </div>
   </div>
+
   <div class="sheet" id="sheet-install" hidden>
     <div class="sheet-card">
       <div class="sheet-top">
@@ -76,6 +113,26 @@
       <button type="button" id="install-native" hidden>Install</button>
     </div>
   </div>
+
+  <div class="sheet" id="sheet-private" hidden>
+    <div class="sheet-card">
+      <div class="sheet-top">
+        <h2>Your private lists</h2>
+        <button type="button" data-close="sheet-private">Close</button>
+      </div>
+      <p class="note">Nothing is uploaded. This is saved only on this device.</p>
+      <p class="how-line">Load a file (a <code>.md</code> or <code>.txt</code> with your “Grateful for” and “Make today great” lists), or paste them below.</p>
+      <input type="file" id="private-file" accept=".md,.txt,text/plain,text/markdown" />
+      <textarea id="private-text" rows="8" placeholder="## Grateful for&#10;1. ...&#10;2. ...&#10;&#10;## Make today great&#10;1. ...&#10;2. ..."></textarea>
+      <div class="sheet-actions">
+        <button type="button" id="private-save">Save on this device</button>
+        <button type="button" id="private-clear" class="link">Remove my lists</button>
+      </div>
+      <p class="status" id="private-current"></p>
+      <p class="status" id="private-status"></p>
+    </div>
+  </div>
+
   <script src="./library.js"></script>
   <script src="./app.js"></script>
 </body>
